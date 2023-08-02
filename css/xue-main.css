@@ -1,0 +1,653 @@
+@charset "utf-8";
+/*-- Created By
+   ##############               ###############   
+    ##############             ###############    
+    ##############             ##############     
+     ##############           ##############      
+      ##############          #############       
+       #############         ##############       
+        #############       ##############        
+        ##############      #############         
+         ###############################          
+         ###############################          
+        #################################         
+        ##############     ##############         
+       ##############       ##############        
+       ##############        ##############       
+      ##############         #######           
+     ###############          ##############      
+     ##############           ###############     
+    ######      
+    ##############              ##############    
+   ##############               ##############
+          
+                 xuedesign studio 
+             https://www.xuedesign.tw/
+*
+*
+* @project    JIAHE Biochemical co., ltd
+* @Author     Tachimoma <hello@xuedesign.tw>
+* @copyright  2020 xuedesign studio
+* @version    v2.1 - 202005
+*
+*=====================================
+* 0. Reset重置
+* 1. 通用設定
+* 2. 結構設定
+*       2.1 區塊設定
+*       2.2 結構文字設定
+* 3. 頁面設定
+*       3.1 首頁
+* 4. 選單設定
+*       4.1 網站主選單
+*       4.2 上方社群連結
+*       4.3 下方社群連結
+* 5. 按鈕設定
+* 6. 載入動畫
+* 7. 自訂scrollbar
+*=====================================
+**/
+
+
+/*
+=====================================
+Reset重置
+=====================================
+*/
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC");
+
+/*
+=====================================
+通用設定
+=====================================
+*/
+html { font-size:62.5% }
+body{
+	margin: 0;
+	padding:0;
+	font-family: "Noto Sans TC","Microsoft JhengHei","PingFangTC-Regular", "Arial", "Helvetica", sans-serif;
+	font-size: 1rem; /* 1rem=10px */
+	color: #735E14;
+    background: url(../images/bg_site.jpg) top center no-repeat}
+form{ margin:0; padding:0}
+image{ border:0}
+.clean{ clear:both}
+.hidden{ display:none}
+h1{display: none}
+
+/*頁面反白設定*/
+::selection { background: #46390b; color: #fff}
+::-moz-selection { background: #46390b; color: #fff}
+img::selection { background: transparent}
+img::-moz-selection { background: transparent}
+
+/*完美置底*/
+html, body, #wrap { height: 100%;}
+body > #wrap { height: auto; min-height: 100%;}
+#main_content{ /*padding-bottom: 267px*/}
+.clearfix:after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden}
+.clearfix { display: inline-block}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%}
+.clearfix { display: block}
+/* End hide from IE-mac */
+
+/*
+=====================================
+全站結構
+=====================================
+*/
+/*區塊設定*/
+#wrap{ display: block;  
+       width: 100%;
+       min-width: 1280px}
+header,
+#page-main{
+    display: flex;
+    flex-wrap:wrap;
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: 35px}
+#hdr-left,
+#page-left{ width: 27%; padding-bottom: 0}
+#hdr-right,
+#page-right{ width: 72%; padding-bottom: 0}
+
+#mobile-nav{ display: none}
+#container-index{
+    display: block;
+    width: 1260px;/*1210px*/
+    margin: 30px auto;
+    padding-top: 0;/*60px*/
+    /*min-height: 500px;
+    background-color: #f1f1f1*/}
+#container-page{
+    display: block;
+    width: 100%;
+    margin: 30px auto ;
+    min-height: 500px;
+    background-color: #f1f1f1}
+
+footer{
+    display: block;
+    width: 100%;
+    min-width: 1280px;
+    min-height: 267px;
+    background: url(../images/bg_footer.png) repeat-x #4E3E04}
+#foot-info{
+    display: flex;
+    width: 1280px;
+    margin: 0 auto;
+    padding-bottom: 20px}
+.fitem-01{ padding: 45px 80px 0 0}
+.fitem-02{ padding:70px 90px 0 0}
+.fitem-03{ padding-top: 70px}
+#logo-down{
+    display: block;
+    width: 126px;
+    height: 191px;
+    background: url(../images/logo_down.png) no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden}
+
+/*結構文字設定*/
+#hdr-left h2 a,
+#page-left h2 a{
+    display: block;
+    width: 242px;
+    height: 278px;
+    background: url(../images/bg_logo.png) no-repeat;
+    margin: 0 auto 35px auto;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden}
+#hdr-right h3,
+#hdr-right p,
+#page-right h3,
+#page-right p{
+    text-align: right;
+    padding: 0 8px 15px 0;
+    color: rgb(138, 122, 94)}
+#hdr-right h3,
+#page-right h3{ 
+    font-size: 3rem; 
+    letter-spacing: 1px;
+    font-weight: 400}
+#hdr-right p,
+#page-right p{ font-size: 1.6rem}
+#page-right .page-title{ 
+    width: 100%;
+    /*height: auto;*/
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px}
+#foot-info h3{
+    font-size: 2rem;
+    line-height: 2.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-bottom: 8px;
+    color: #EDDB99}
+#foot-info p,
+#foot-info li{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: #ECE7C6}   
+
+/*
+=====================================
+頁面設定
+=====================================
+*/
+/*首頁*/
+.item-index{
+    display: block;
+    width: 1030px;
+    margin: 0 auto 80px auto}
+.item-index h3{
+    display: block;
+    width: 820px;
+    min-height: 60px;
+    margin: 0 auto;
+    padding:0 80px 30px;
+    background: url(../images/bg_title-line.png) bottom center no-repeat;
+    background-size: 820px 28px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    letter-spacing: 10px;
+    text-align: center;
+    color: rgb(115, 94, 20)}
+.item-index p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.4rem;
+    color: rgb(115, 94, 20)}
+.item-info{
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+    padding-top: 10px;
+    text-align: center}
+#box_lesson-info{
+    display: block;
+    width: 716px;
+    margin: 25px auto 55px}
+#box_lesson-info img{
+    display: block;
+    float: left;
+    width: 460px;
+    height: auto;
+    margin-right: 50px}
+.lesson-list{
+    display: block;
+    float: right;
+    width: 206px}
+.lesson-list ul{
+    display: block;
+    margin: 0;
+    padding: 0 0 20px 0}
+.lesson-list li{
+    font-size: 1.6rem;
+    line-height: 3.5rem;
+    letter-spacing: 1.6px;
+    color: #735e14}
+.lesson-list i{
+    font-size: 1rem;
+    padding-right: 15px;
+    color: rgb(237, 219, 153)}
+.lesson-list .mybtn-l{ margin: 0 auto}
+
+.item-products{
+    display: block;
+    position: relative;
+    width: 1030px;
+    min-height: 426px;
+    margin: 20px auto 55px}
+.item-products:nth-child(4){ margin-bottom: 0}
+.item-draw-01,
+.item-draw-02,
+.item-draw-03,
+.item-draw-04{ display: block; height: auto}
+.item-draw-01{ float: left; width: 575px}
+.item-draw-02{ float: right; width: 554px}
+.item-draw-03{ float: left; width: 547px}
+.item-draw-04{ float: right; width: 589px}
+.item-subinfo{
+    display: block;
+    position: absolute}
+.subinfo-01{
+    top:0;
+    right: 0;
+    width: 485px;
+    padding: 90px 0 0 80px;
+    background: url(../images/icon_time-06.png) 0 72px no-repeat;
+    background-size: 62px 85px}
+.subinfo-02{
+    top:0;
+    left: 0;
+    width: 476px;
+    padding: 80px 0 0 80px;
+    background: url(../images/icon_time-08.png) 0 60px no-repeat;
+    background-size: 63px 88px}
+.subinfo-03{
+    top:0;
+    right: 0;
+    width: 483px;
+    padding: 80px 0 0 80px;
+    background: url(../images/icon_time-19.png) 0 62px no-repeat;
+    background-size: 64px 85px}
+.subinfo-04{
+    top:0;
+    left: 0;
+    width: 441px;
+    padding: 80px 0 0 90px;
+    background: url(../images/icon_time-20.png) 0 62px no-repeat;
+    background-size: 74px 85px}
+.item-title {
+	font-size: 1.9rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    /*letter-spacing: 1px;*/
+    color: rgb(227, 191, 89);
+    padding-bottom: 30px}
+.item-subinfo p{ padding-bottom: 40px}
+#contact-index{
+    display: block;
+    width: 820px;
+    margin: 0 auto;
+    padding-top: 30px}
+.contact-left,
+.contact-right{
+    display: block;
+    width: 50%}
+.contact-left{ float: left}
+.contact-right{ float: right}
+.contact-left ul{
+    display: block;
+    padding: 30px 20px 0 80px}
+.contact-left li{
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    list-style: none;
+    margin: 15px 0;
+    border-bottom: 1px dotted #cbc6c0}
+
+ /*廣告Banners*/   
+#index-adlink{ 
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    width: 98%;
+    padding-bottom: 40px}
+#index-adlink a{
+    display: block;
+    width: 38%;
+    margin: 0 1%}
+#index-adlink img{
+    width: 100%;
+    height: auto}    
+/*
+=====================================
+選單設定
+=====================================
+*/
+/*網站主選單*/
+#main-nav{
+    width: 242px;
+    margin: 0 auto;
+    text-align: right;
+    list-style: none}
+#main-nav li a{
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    color: #8A7A5E;
+    text-decoration: none;
+    line-height: 3.5rem}
+#main-nav li a:hover{
+    display: block;
+    padding: 0 15px;
+    margin-left: 110px;
+    background: rgb(229,195,119);
+    color: #fff;
+    text-decoration: none;
+    /*-webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    transition: .8s*/}
+.hvr-round-corners {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: border-radius;
+  transition-property: border-radius}
+.hvr-round-corners:hover, 
+.hvr-round-corners:focus, 
+.hvr-round-corners:active {
+  border-radius: 1em}
+
+/*上方社群連結*/
+#social_link{
+    display: flex;
+    flex-wrap:wrap;
+    width: 98%;
+    padding: 27px 52px 0 50px;
+    list-style: none;
+    justify-content: space-between}
+#social_link li a{
+    display: block;
+    width: 47px;
+    height: 47px;
+    background: url(../images/icon_social.png) no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden}
+#social_link .icon_fb a:hover{ background-position: 0 -47px}
+#social_link .icon_line a{ background-position: -47px 0}
+#social_link .icon_line a:hover{ background-position: -47px -47px}
+#social_link .icon_ig a{ background-position: -94px 0}
+#social_link .icon_ig a:hover{ background-position: -94px -47px}
+#social_link .icon_mail a{ background-position: -141px 0}
+#social_link .icon_mail a:hover{ background-position: -141px -47px}
+
+/*下方社群連結*/
+#down-social{
+    display: flex;
+    flex-wrap:wrap;
+    width: 60%;
+    padding-bottom: 20px;
+    list-style: none;
+    justify-content: space-between;}
+#down-social li a{
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: url(../images/icon_social-down.png) no-repeat;
+    opacity: .7;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden}
+#down-social .icon_line a{ background-position: -35px 0}
+#down-social .icon_ig a{ background-position: -70px 0}
+#down-social .icon_mail a{ background-position: -105px 0}
+#down-social .icon_fb a:hover,
+#down-social .icon_line a:hover,
+#down-social .icon_ig a:hover,
+#down-social .icon_mail a:hover{ opacity: 1}
+
+/*
+=====================================
+按鈕設定
+=====================================
+*/
+.mybtn-xl,
+.mybtn-l,
+.mybtn-m,
+.mybtn-s{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    text-align: center;
+    border: 2px solid;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    margin: 0 auto;
+    text-decoration: none}
+.mybtn-xl{ 
+    width: 260px;
+    padding: 8px 10px}
+.mybtn-l{ 
+    width: 160px;
+    padding: 8px 10px}
+.mybtn-m{ 
+    width: 120px;
+    padding: 8px 10px}
+.mybtn-s{
+    width: 90px;
+    padding: 5px 10px}
+.btn_more{ 
+    line-height: .8em;
+    border-color: #dab633;
+    color: #735E14}
+.btn_more:hover,
+.btn_backto:hover{ 
+    background: #735E14;
+    color: #fff;
+    transition: .5s}
+.btn_backto{
+    float: right;
+    color: #fff;
+    background: #3ec7b1;
+    padding: 15px 10px;
+    margin-bottom: 50px}
+.btn_backlist{ display: none}
+.btn_line,
+.btn_facebook{
+    height: 36px;
+    border: 0}
+.btn_line{ margin: 0 10px 0 20px}
+
+/*
+=====================================
+載入動畫
+=====================================
+*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 150px, 0);
+    transform: translate3d(0, 150px, 0)}
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)}
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 150px, 0);
+    transform: translate3d(0, 150px, 0)}
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)}
+}
+.fadeInUp,
+.fadeInUp-01{
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  -webkit-animation-duration: 900ms;
+  -moz-animation-duration: 900ms;
+  animation-duration: 900ms}
+.fadeInUp-01{
+  /*-webkit-animation-delay: 500ms;
+  animation-delay: 500ms*/}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(150px, 0, 0);
+    transform: translate3d(150px, 0, 0)}
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)}
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(150px, 0, 0);
+    transform: translate3d(150px, 0, 0)}
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)}
+}
+
+
+.fadeInRight,
+.fadeInRight-01{
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+    -webkit-animation-duration: 900ms;
+    -moz-animation-duration: 900ms;
+    animation-duration: 900ms}
+.fadeInRight-01{
+    /*-webkit-animation-delay: 500ms;
+    animation-delay: 500ms*/}
+
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-150px, 0, 0);
+    transform: translate3d(-150px, 0, 0)}
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)}
+}
+
+.fadeInLeft{
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    /*-webkit-animation-delay: 900ms;
+    animation-delay: 900ms;*/
+    -webkit-animation-duration: 1200ms;
+    -moz-animation-duration: 1200ms;
+    animation-duration: 1200ms}
+.fadeInLeft-01{
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-duration: 900ms;
+    -moz-animation-duration: 900ms;
+    animation-duration: 900ms}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0}
+  to {
+    opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0}
+  to {
+    opacity: 1}
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1500ms;
+    -moz-animation-duration: 1500ms;
+    animation-duration: 1500ms}
+
+/*
+=====================================
+自訂scrollbar
+=====================================
+*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0}
+::-webkit-scrollbar-thumb {
+  background: rgba(162,131,20, .5);
+  border: 0px none #fff;
+  border-radius: 60px}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(162,131,20, 1)}
+::-webkit-scrollbar-track {
+  background: #ECECEC;
+  border: 0px none #fff;
+  border-radius: 0}

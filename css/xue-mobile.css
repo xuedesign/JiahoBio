@@ -1,0 +1,722 @@
+@charset "utf-8";
+/*-- Created By
+   ##############               ###############   
+    ##############             ###############    
+    ##############             ##############     
+     ##############           ##############      
+      ##############          #############       
+       #############         ##############       
+        #############       ##############        
+        ##############      #############         
+         ###############################          
+         ###############################          
+        #################################         
+        ##############     ##############         
+       ##############       ##############        
+       ##############        ##############       
+      ##############         #######           
+     ###############          ##############      
+     ##############           ###############     
+    ######      
+    ##############              ##############    
+   ##############               ##############
+          
+                 xuedesign studio 
+             https://www.xuedesign.tw/
+*
+*
+* @project    JIAHE Biochemical co., ltd
+* @Author     Tachimoma <hello@xuedesign.tw>
+* @copyright  2020 xuedesign studio
+* @version    v2.1 - 202005
+*
+
+/*
+=====================================
+平板裝置(寬>長)  for-tablet-landscape-up
+=====================================
+*/
+@media (max-width:1110px) { /*1000*/
+    #wrap,
+    footer{
+        width: 100%;
+        min-width: 1000px} 
+    header,
+    #page-main,
+    #foot-info,
+    .item-products{ width: 100%} 
+    #container-index,
+    #container-page,
+    #container-main,
+    .item-index{ width: 97%}
+    #hdr-left h2 a,
+    #page-left h2 a{
+        width: 190px;
+        height: 218px;
+        background: url(../images/bg_logo@2x.png) no-repeat;  
+        background-size: 190px 218px;
+        margin: 0 auto 20px auto} 
+    #main-nav{ width: 190px}
+    #main-nav li a{ line-height: 3.3rem}
+    #main-nav li a:hover{ margin-left: 55px}
+    #social_link{ width: 105%}
+    #social_link li a{
+        width: 35px;
+        height: 35px;
+        background: none}
+    #social_link .icon_fb a{ 
+        background: url(../images/icon_facebook@2x.png) no-repeat;
+        background-size: 35px 35px}
+    #social_link .icon_fb a:hover{ 
+        background: url(../images/icon_facebook-hover@2x.png) no-repeat;
+        background-size: 35px 35px}
+    #social_link .icon_line a{ 
+        background: url(../images/icon_line@2x.png) no-repeat;
+        background-size: 35px 35px}
+    #social_link .icon_line a:hover{ 
+        background: url(../images/icon_line-hover@2x.png) no-repeat;
+        background-size: 35px 35px}
+    #social_link .icon_ig a{ 
+        background: url(../images/icon_intsagram@2x.png) no-repeat;
+        background-size: 35px 35px}
+    #social_link .icon_ig a:hover{ 
+        background: url(../images/icon_intsagram-hover@2x.png) no-repeat;
+        background-size: 35px 35px}
+    #social_link .icon_mail a{ 
+        background: url(../images/icon_mail@2x.png) no-repeat;
+        background-size: 35px 35px}
+    #social_link .icon_mail a:hover{ 
+        background: url(../images/icon_mail-hover@2x.png) no-repeat;
+        background-size: 35px 35px}
+    
+    #logo-down{
+        background: url(../images/logo_down@2x.png) no-repeat;
+        background-size: 126px 191px}
+    .fitem-01{ padding: 45px 80px 0 50px}
+    #down-social li a{ background: none}
+    #down-social .icon_fb a{ 
+        background:url(../images/icon_social-down-Facebook@2x.png) no-repeat;
+        background-size: 35px 35px}
+    #down-social .icon_line a{ 
+        background:url(../images/icon_social-down-Line@2x.png) no-repeat;
+        background-size: 35px 35px}
+    #down-social .icon_ig a{
+        background:url(../images/icon_social-down-Intsagram@2x.png) no-repeat;
+        background-size: 35px 35px}
+    #down-social .icon_mail a{
+        background:url(../images/icon_social-down-mail@2x.png) no-repeat;
+        background-size: 35px 35px}
+    
+    .item-draw-01{ float: left; width: 530px}
+    .item-draw-02{ float: right; width: 480px}
+    .item-draw-03{ float: left; width: 500px}
+    .item-draw-04{ float: right; width: 500px}
+    
+    .item_staff img,
+    .staff-info{ float: none}
+    .staff-info{ width: 100%}
+    .staff-title-01{ width: 48%}
+    .staff-title-02{ width: 58%}
+    .staff-title-03{ width: 48%}
+    .staff-title-04{ width: 25%}
+    .staff-title-05{ width: 55%}
+    .staff-info h5{ padding: 15px 0}
+    
+    #playlist li{ width: 46%}
+    #playlist a{ top:25px; left: 100px}
+    
+    .products-info .btn_line,
+    .products-info .btn_facebook{ height: 33px}
+
+    /*側邊廣告連結*/
+    .box_leftlink{ margin: 20px 20px 0 0}
+    .btn_adlink-01,
+    .btn_adlink-02{ 
+        width: 220px;
+        background-size: cover;}
+    .btn_adlink-01{ height: 260px}
+    .btn_adlink-02{ height: 168px}
+    
+    /*醫生介紹頁*/
+    .doctor-photo{
+        width: 25%;
+        height: 25%; 
+        margin-right: 5%;}
+    #doctor-main{ width: 69%;}
+    #doctor-film{
+        margin: 20px auto 0 auto}
+    #doctor-film iframe{
+        width: 100%;
+        height: 390px}
+    
+    .promo-item{
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 350px}
+    .doctor-01{
+        display: block;
+        width: 200px;
+        height: 272px;
+        right: -40px;
+        bottom: 70px;
+        z-index: 10}
+    .doctor-02{
+        display: block;
+        width: 220px;
+        height: 299px;
+        left: -20px;
+        bottom: 50px;
+        z-index: 10}
+    .ppp-01{
+        width: 110px;
+        height: 204px;
+        top: -50px;
+        left: 30px;
+        z-index: 1}
+    .ppp-02{
+        width: 180px;
+        height: 138px;
+        top: -10px;
+        right: -10px;
+        z-index: 1}    
+    #ppitem-01{ margin: 70px 0 0;}
+    #ppitem-02{ margin-bottom: 30px;}
+    #ppitem-01 span{
+        top: 9%;
+        left: 26%;
+        z-index: 1;}
+    #ppitem-01 strong{
+        top: 12%;
+        left: 26%;
+        z-index: 1;}
+    #ppitem-01 p{
+        display: block;
+        top: 29%;
+        left: 26%;
+        width: 48%;
+        z-index: 1;}  
+    #ppitem-02 span{
+        top: 13%;
+        left: 35%;
+        z-index: 1;}
+    #ppitem-02 strong{
+        top: 16%;
+        left: 35%;
+        z-index: 1;}
+    #ppitem-02 p{
+        display: block;
+        top: 33%;
+        left: 35%;
+        width: 39%;
+        z-index: 1;}
+    #experience h3{
+        background-size: 600px 28px}
+    #box-experience img{
+        width: 180px;
+        height: 137px}
+    #experience-main{ 
+        width: 64%;
+        padding: 0;}
+    #experience-main p{ padding:0 15px 15px 15px}                   
+}
+
+/*
+=====================================
+平板裝置(長>寬) for-tablet-portrait-up
+=====================================
+*/
+@media (max-width:800px) { /*750*/
+    body{ background-attachment: fixed}
+    #wrap,
+    footer{
+        width: 100%;
+        min-width: 750px}
+    header,
+    #page-main{ margin-top: 0; padding-top: 120px}
+    #hdr-left,
+    #page-left{ display: none}
+    #hdr-right,
+    #page-right{ width: 100%; margin: 0 auto}
+    #hdr-right h3,
+    #hdr-right p,
+    #page-right h3,
+    #page-right p{ display: none}
+    #container-main p{ display: block}
+    
+    #mobile-nav{ 
+        display: block;
+        position: fixed;
+        z-index: 99;
+        width: 100%;
+        min-width: 750px;
+        height: 120px;
+        padding: 15px 15px;
+        background: #fff;
+        border-top: 5px solid #edd07f;
+        -webkit-box-shadow: 0 1px 5px #c4c4c4;
+        -moz-box-shadow: 0 1px 5px #c4c4c4;
+        box-shadow: 0 1px 5px #c4c4c4}
+    #mobile-nav h2 a{
+        display: block;
+        float: left;
+        width: 270px;
+        height: 90px;
+        background: url(../images/bg_logo@RWD.png) no-repeat;
+        background-size: 270px 90px;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden}
+    #trigger-overlay{
+        display: block;
+        float: right;
+        margin-top: 18px;
+        width: 50px;
+        height: 50px;
+        /*font-size: 2em;*/
+        /*color: #fff;
+        text-align: center;*/
+        background: url(../images/icon_Menu.svg) top center no-repeat;
+        background-size: 45px 45px;
+        opacity: .7;
+        border: none;
+        cursor: pointer;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        border-radius: 100px}
+    #trigger-overlay:hover{
+        /*background: rgba(218,182,54,1);
+        color: #fff;*/
+        opacity: 1;
+        transition: .5s}
+    
+    #page-right .page-title{ 
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0}
+    .fitem-01{ padding: 45px 50px 0 15px}
+    .fitem-02{ padding:70px 0 0 0}
+    .fitem-03{ padding: 70px 10px 0 30px}
+    
+    .item-index{ margin: 0 auto 40px auto}
+    .item-index h3{ 
+        width: 100%;
+        background-size: 720px 25px}
+    .item-products{ margin: 20px auto 0 auto}
+    .item-draw-01,
+    .item-draw-02,
+    .item-draw-03,
+    .item-draw-04{ 
+        float: none; 
+        width: 80%;
+        height: auto;
+        margin: 0 auto}
+    .item-subinfo{ 
+        width: 80%; 
+        position: static;
+        margin: 0 auto 50px}
+    /*.item-subinfo:nth-child(4){ margin-bottom: 30px}*/
+    .subinfo-01{
+        padding: 20px 0 0 80px;
+        background-position: 0 0}
+    .subinfo-02{
+        padding: 65px 0 0 80px;
+        background-position: 0 10px}
+    .subinfo-03{
+        padding: 62px 0 0 80px;
+        background-position: 0 10px}
+    .subinfo-04{
+        padding: 65px 0 0 80px;
+        background-position: 0 10px}
+    .item-title { padding-bottom: 10px}
+    #contact-index{ width: 99%}
+    .contact-left{ width: 45%}
+    .contact-right{ width: 55%}
+    .contact-left ul{ padding: 30px 15px 0 20px}
+    
+    .item_staff{ padding-left: 80px}
+    .staff-title-01{ width: 62%}
+    .staff-title-02{ width: 75%}
+    .staff-title-03{ width: 62%}
+    .staff-title-04{ width: 35%}
+    .staff-title-05{ width: 70%}
+    
+    .mybtn-l{ margin: 0 auto}
+    .btn_backto{ float: none}
+
+    #mobile-adlink{ 
+        display: flex;
+        flex-wrap:wrap;
+        width: 98%;
+        margin-bottom: 15px;
+        /*padding: 27px 52px 0 50px;*/
+        justify-content: space-between;
+        /*border: 1px solid #111*/}
+    #mobile-adlink a{
+        display: block;
+        width: 48%;
+        margin: 0 1%}
+    #mobile-adlink img{
+        width: 100%;
+        height: auto}
+    #index-adlink a{ width: 48%}
+
+    /*醫師介紹頁*/
+    #experience h3{ display: block;}
+
+}
+
+/*
+=====================================
+平板裝置(7"~8"小平板) for-SnmallTablet
+=====================================
+*/
+@media (max-width: 600px) { /*573*/
+    #wrap,
+    footer{
+        width: 100%;
+        min-width: 573px}
+    #main_content{ padding-bottom: 50px}
+    #mobile-nav{ min-width: 573px}
+    #foot-info{ flex-wrap: wrap}
+    .fitem-01{ width: 30%; padding: 45px 0 0 20px}
+    .fitem-02{ width: 69%; padding: 70px 0 0 20px}
+    .fitem-03{ width: 90%; padding: 20px 0 0 195px}
+    
+    .item-index h3{ 
+        letter-spacing: 3px;
+        background-size: 550px 19px}
+    .item-info,
+    #box_lesson-info{ width: 100%}
+    #box_lesson-info img{
+        float: none;
+        margin: 0 auto}
+    .lesson-list{
+        float: none;
+        width: 38%;
+        margin: 15px auto 0 auto}
+    .item-title {
+        font-size: 1.75rem;
+        line-height: 2.5rem}
+    .contact-left,
+    .contact-right{ 
+        float: none;
+        margin: 0 auto}
+    .contact-left{ width: 50%}
+    .contact-right{ width: 95%}
+    .contact-left ul{ padding: 0 0 20px 0}
+    .contact-right iframe{ 
+        display: block;
+        width: 360px;
+        margin: 0 auto}
+    
+    #container-main h4{ padding: 0 0 10px 38px}
+    #container-main p{ padding-bottom: 15px}
+    .btn_facebook{ margin-left: 112px}
+    
+    .item_staff{ padding-left: 25px}
+    .staff-title-01{ width: 70%}
+    .staff-title-02{ width: 84%}
+    .staff-title-03{ width: 70%}
+    .staff-title-04{ width: 35%}
+    .staff-title-05{ width: 75%}
+    
+    #playlist a{ top:12px; left: 60px}
+    #products-list li{ width: 46%}
+    .products-photo,
+    .products-info{
+        float: none;
+        width: 95%;
+        padding-left: 0}
+    .products-info .btn_line,
+    .products-info .btn_facebook{ height: 36px}
+    .products-info .btn_facebook{ margin-left: 10px}
+
+    /*醫師介紹頁*/
+    #doctor-info{ 
+        display: block;}
+    .doctor-photo{
+        width: 50%;
+        height: 50%; 
+        margin: 0 auto}
+    #doctor-main{ 
+        width: 95%;
+        margin: 0 auto;}
+    #doctor-main h5{
+        padding-top: 15px;
+        padding-bottom: 15px;}
+    #doctor-film iframe{
+        height: 320px}
+    .promo-box{
+        width: 100%;
+        height: 259px}
+    #doctor-promo h6{ letter-spacing: 0;}        
+    .doctor-01{
+        width: 120px;
+        height: 163px;
+        right: -20px;
+        top: -95px;
+        bottom: 0;}
+    #ppitem-01 span{
+        top: 9%;
+        left: 32%;
+        z-index: 1;}
+    #ppitem-01 strong{
+        top: 12%;
+        left: 32%;
+        z-index: 1;}
+    #ppitem-01 p{
+        display: block;
+        top: 29%;
+        left: 32%;
+        width: 55%;
+        z-index: 1;}    
+    .doctor-02{
+        width: 120px;
+        height: 163px;
+        right: -20px;
+        top: -95px;
+        bottom: 0;}
+    .ppp-02{
+        top: -45px;
+        right: -10px} 
+    #ppitem-02 span{
+        top: 16%;
+        left: 20%;
+        z-index: 1;}
+    #ppitem-02 strong{
+        top: 19%;
+        left: 20%;
+        z-index: 1;}
+    #ppitem-02 p{
+        display: block;
+        top: 40%;
+        left: 20%;
+        width: 60%;
+        z-index: 1;}
+    #ppitem-02{ margin-bottom: 0}
+    #ppitem-02.promo-item{
+        height: 320px}
+
+    #experience h3{
+        padding:0 40px 30px;
+        background-size: 100% 28px}
+    #box-experience img{
+        float: none;
+        width: 85%;
+        height: auto;
+        margin: 0 auto 15px auto;}
+    #experience-main{
+        float: none; 
+        width: 100%;
+        padding: 0;}
+    #experience-main p{ padding:0 0 20px}          
+
+} 
+
+/*
+=====================================
+手機(5"以上大螢幕) for-phone-only
+=====================================
+*/
+@media (max-width: 420px) { /*360*/
+    #wrap,
+    footer{
+        width: 100%;
+        min-width: 360px}
+    #mobile-nav{ min-width: 360px}
+    #logo-down{
+        width: 90px;
+        height: 136px;
+        background-size: 90px 136px}
+    .fitem-01{ width: 30%; padding: 45px 0 0 20px}
+    .fitem-02{ width: 69%; padding: 55px 0 0 20px}
+    .fitem-03{ width: 95%; padding: 20px 0 0 35px}
+    .fitem-03 h3{ padding-left: 105px}
+    #down-social{ width: 85%;  padding-left: 105px}
+    
+    #container-index{ 
+        padding-top: 0;
+        margin-bottom: 0}
+    .item-index h3{ 
+        letter-spacing: 0;
+        background: none;
+        padding:0;
+        line-height: 2.6rem;
+        min-height: 30px}
+    #box_lesson-info img{ width: 95%; height: auto}
+    .lesson-list{ width: 57%}
+    .subinfo-01,
+    .subinfo-02,
+    .subinfo-03,
+    .subinfo-04{ 
+        background: none;
+        padding-left: 0;
+        padding-top: 30px}
+    .item-subinfo{ 
+        width: 95%;
+        margin: 0 auto 50px}
+    .contact-left{ width: 70%}
+    .contact-right{ width: 100%}
+    .contact-left .btn_line,
+    .contact-left .btn_facebook{ display: inline-block}
+    .contact-left .btn_facebook{ margin-left: 5px}
+    .contact-left .btn_line{ margin: 0 5px}
+    
+    #bar_cookie{ display: none}
+    #container-main{ padding: 30px 15px 0}
+    #container-main scetion{ padding-bottom: 0}
+    
+    #box_staff{ display: block}
+    .item_staff{ width: 100%; padding-left: 65px}
+    .staff-title-01{ width: 60%}
+    .staff-title-02{ width: 75%}
+    .staff-title-03{ width: 60%}
+    .staff-title-04{ width: 30%}
+    .staff-title-05{ width: 65%}
+    
+    #playlist li{ width: 95%}
+    #playlist a{ top:35px; left: 115px}
+    #products-list li{ width: 96%}
+    .products-info span{
+        display: block;
+        padding-left: 83px}
+    .products-info .btn_line{ margin-bottom: 15px}
+    .products-info .btn_facebook{ 
+        display: block;
+        margin-left: 90px}
+    .psub-list{ padding-top: 50px}
+
+    #mobile-adlink{
+        margin-bottom: 0}
+    #mobile-adlink a{
+        display: block;
+        width: 100%;
+        margin: 1% 0}
+    #index-adlink a{ 
+        width: 100%;
+        margin: 1% 0}
+    
+    /*醫師介紹頁*/
+    #doctor-sologen{ display: block}
+    #doctor-sologen img{
+        display: block;
+        margin: 15px auto 30px auto}
+    #doctor-film iframe{
+        height: 230px}
+   
+    #doctor-promo h6{
+        font-size: 2.5rem;
+        line-height: 5rem}
+    .promo-item span{
+        font-size: 1.8rem;
+        line-height: 2.2rem}
+    .promo-item strong{
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+        line-height: 6rem;
+        color: #FA7F39}
+    
+    .promo-item{ height: 600px}
+    .promo-box{ height: 500px}
+    .ppp-01{
+        top: 35px;
+        left: 35%}
+    #ppitem-01 span{
+        top: 45%;
+        left: 5%;
+        z-index: 1;}
+    #ppitem-01 strong{
+        top: 48%;
+        left: 5%;
+        z-index: 1;}
+    #ppitem-01 p{
+        display: block;
+        top: 58%;
+        left: 5%;
+        width: 90%;
+        z-index: 1;}
+    .ppp-02{
+        top: 35px;
+        left: 30%}
+    #ppitem-02{ margin-bottom: 100px;}     
+    #ppitem-02 span{
+        top: 60%;
+        left: 5%;}
+    #ppitem-02 strong{
+        top: 64%;
+        left: 5%;}
+    #ppitem-02 p{
+        top: 82%;
+        left: 5%;
+        width: 90%}
+    #ppitem-02>.promo-item{ height: 400px} 
+    #ppitem-02>.promo-box{ height: 370px}    
+}
+
+/*
+=====================================
+手機(4.7"以下小螢幕) for-phone-only
+=====================================
+*/
+@media (max-width: 321px) { /*300*/
+    #wrap,
+    footer{
+        width: 100%;
+        min-width: 300px}
+    header,
+    #page-main{ padding-top: 100px}
+    #mobile-nav{ 
+        min-width: 300px;
+        height: 100px}
+    #mobile-nav h2 a{
+        width: 200px;
+        height: 67px;
+        background-size: 200px 67px}
+    #trigger-overlay{ margin-top: 8px}
+    #logo-down{
+        width: 90px;
+        height: 136px;
+        background-size: 90px 136px;
+        margin: 0 auto}
+    .fitem-01,
+    .fitem-02,
+    .fitem-03{ width: 100%; padding: 15px 0 0}
+    .fitem-01{margin-top: 45px}
+    .fitem-02,
+    .fitem-03{ padding-left:30px}
+    .fitem-03 h3{ padding-left: 0}
+    #down-social{ width: 70%;  padding-left: 0}
+    #foot-info .fitem-03 p{font-size: 1.3rem}
+    
+    .lesson-list{ width: 70%}
+    .item-title{ 
+        font-size: 1.657rem;
+        line-height: 2.5rem}
+    .contact-left{ width: 95%}
+    .btn_line{ margin: 0 10px}
+    .contact-right{ display: none}
+    
+    #box_contact span,
+    .btn_line,
+    .btn_facebook{
+        display: block;
+        margin-left: 32px;
+        margin-bottom: 10px}
+    .products-info .btn_line{ margin-bottom: 15px}
+    .products-info .btn_line,
+    .products-info .btn_facebook{ 
+        display: block;
+        margin-left: 90px}
+    
+    #lesson-info{ padding-left: 0}
+    .item_staff{ padding-left: 35px}
+    .staff-title-01{ width: 68%}
+    .staff-title-02{ width: 83%}
+    .staff-title-03{ width: 68%}
+    .staff-title-04{ width: 35%}
+    .staff-title-05{ width: 75%}
+    
+    #playlist a{ top:20px; left: 80px}
+    
+}
